@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\ctw00378\Desktop\lets-get-checked\src\app\app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="149"/>
+  </file>
+  <file path="C:\Users\ctw00378\Desktop\lets-get-checked\src\app\posts\posts.component.spec.ts">
+    <testCase name="PostsComponent should create" duration="165"/>
+  </file>
+  <file path="C:\Users\ctw00378\Desktop\lets-get-checked\src\app\posts\post\post.component.spec.ts">
+    <testCase name="PostComponent should create" duration="151"/>
+  </file>
+  <file path="C:\Users\ctw00378\Desktop\lets-get-checked\src\app\single-post\single-post.component.spec.ts">
+    <testCase name="SinglePostComponent should create" duration="176"/>
+    <testCase name="SinglePostComponent should add a comment" duration="63"/>
+  </file>
+  <file path="C:\Users\ctw00378\Desktop\lets-get-checked\src\app\service\posts.service.spec.ts">
+    <testCase name="PostsService should be created" duration="24"/>
+    <testCase name="PostsService should fetch all posts" duration="14"/>
+    <testCase name="PostsService should get error on fetching all posts" duration="7"/>
+  </file>
+</testExecutions>

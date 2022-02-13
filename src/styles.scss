@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e9ebf1;
+}
+
+button {
+  box-shadow: none !important;
+  border: none;
+  font-family: Arial, serif;
+  min-width: 100px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #dbdbdb;
+
+  &:not(:disabled):hover {
+    background: #999999;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

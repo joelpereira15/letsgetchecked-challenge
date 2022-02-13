@@ -1,0 +1,13 @@
+<article>
+  <header class="header">
+    <h3>{{post?.title}}</h3>
+  </header>
+  <div class="content">
+    <p>{{post?.description}}</p>
+    <p [innerHTML]="post?.content"></p>
+  </div>
+  <footer>
+    <button [routerLink]="['/posts/', post?.id]">See More</button>
+    <p>{{post?.publish_date}}</p>
+  </footer>
+</article>

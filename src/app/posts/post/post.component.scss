@@ -1,0 +1,28 @@
+article {
+  background: white;
+  min-width: 350px;
+  font-family: Arial, sans-serif;
+
+  .header {
+    border-bottom: 1px solid #dbdbdb;
+    padding-inline: 1rem;
+    padding-top: 0.125rem;
+
+    h3 {
+      margin: 0.5rem;
+      color: #15c1d1;
+    }
+  }
+
+  .content {
+    padding-inline: 1.5rem;
+    line-height: 1.2;
+  }
+
+  footer {
+    padding-inline: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

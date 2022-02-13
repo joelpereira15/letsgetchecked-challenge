@@ -1,0 +1,33 @@
+<main>
+  <header>
+    <h3>{{post?.title}}</h3>
+    <p>{{post?.publish_date}}</p>
+  </header>
+  <p>{{post?.description}}</p>
+  <p [innerHTML]="post?.content"></p>
+
+  <div class="comments-wrapper">
+    <div *ngFor="let comment of comments">
+      <div class="header">
+        <p class="user">{{comment.user}}</p>
+        <p class="publish-date">{{comment.date}}</p>
+      </div>
+      <p class="content">{{comment.content}}</p>
+    </div>
+  </div>
+
+  <footer>
+    <label>Comment:</label>
+
+    <textarea
+      rows="2"
+      class="comments-input"
+      data-cy="comment"
+      id="comment"
+      autocomplete="off"
+      [class.display-error]="commentControl.touched && commentControl.dirty && commentControl.invalid"
+      [formControl]="commentControl"
+    ></textarea>
+    <button [disabled]="commentControl.invalid" (click)="addComment()">Submit</button>
+  </footer>
+</main>
